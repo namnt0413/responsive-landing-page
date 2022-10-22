@@ -38,13 +38,13 @@
 :root {
   --black: #16161d;
   --white: #fff;
-  --light-color: #808080;
+  --gray: #808080;
   --light-bg: #f5f5f8;
   --google-color: #4285f4;
   --twitter-color: #1da1f2;
   --youtube-color: #ff0000;
   --linkedin-color: #0e76a8;
-  --green: #04AA6D;
+  --green: #5bc1ac;
 }
 
 html {
@@ -94,10 +94,10 @@ section {
 /* pre-header */
 .pre-header {
   background-color: var(--green);
-  height: 50px;
+  height: 30px;
   left: 0;
   right: 0;
-  padding: 0.2rem 7rem;
+  padding: 0.2rem 16rem;
   align-items: center;
   z-index: 100;
 }
@@ -112,6 +112,9 @@ section {
 }
 .pre-header .icon i {
   color: var(--white);
+  width: 25px;
+  height: 25px;
+  font-size: 15px;
 }
 /* pre-header */
 
@@ -122,7 +125,7 @@ section {
     /* top: 0; */
     left: 0;
     right: 0;
-    padding: 0.2rem 7rem;
+    padding: 0.2rem 16rem;
     display: flex;
     align-items: center;
     z-index: 100;
@@ -131,7 +134,7 @@ section {
   .header.active {
     top: 0;
     background: var(--white);
-    padding: 0.2rem 7rem;
+    padding: 0.2rem 16rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   }
   
@@ -169,7 +172,7 @@ section {
   }
 
   .logo-text .name {
-    color: #04AA6D;
+    color: var(--green);
   }
 
   .logo-text .organization {
@@ -198,17 +201,186 @@ section {
     background-position: center;
   }
 
-  button.slick-next {
-    right: 25px;
+  .slick-prev {
+    left: 30px !important;
+    z-index: 10 !important;
+    height: 48px !important;
+    width: 44px !important;
+    background: #808080 !important;
+    border-radius: 50% !important;
+
+    /* &:hover {
+        background: #fff !important;
+    } */
   }
-  button.slick-prev {
-    left: 25px;
+
+  .slick-next {
+    right: 30px !important;
+    /* z-index: 10 !important; */
+    height: 48px !important;
+    width: 44px !important;
+    background: #808080 !important;
+    border-radius: 50% !important;
+
+    /* &:hover {
+        background: #fff !important;
+    } */
+  }
+
+  /* welcome */
+  .welcome {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .welcome h2.heading {
+    color: #808080;
+  }
+  .welcome .welcome-container {
+    margin: 0 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 5rem;
+  }
+
+  .welcome .welcome-container .content {
+    position: absolute;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .welcome .welcome-container .welcom-item {
+    margin: 0 15px;
+    width: 126px;
+  }
+  .welcome .welcome-container .welcom-item .content h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .welcome .welcome-container .welcom-item .image img {
+    padding: 0 20px;
+    height: 86px;
+  }
+  /* welcome */
+
+
+  /* story */
+  .story {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .story .story-container {
+    margin: 0 16rem;
+  }
+  .story .story-container .story-item .image {
+    height: 40rem;
+  }
+
+  .story .story-container .story-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .story .story-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 5rem;
+  }
+
+  .story .story-container .story-item .heading {
+    color:var(--gray);
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .story .story-container .story-item .name {
+    color: var(--green);
+    font-size: 16px;
+  }
+  .story .story-container .story-item .mission {
+    color: var(--green);
+    font-size: 16px;
+  }
+
+  .story .story-container .story-item p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    padding: 1.5rem 0;
+    color:var(--gray);
+    text-transform: none;
+  }
+  /* story */
+
+
+  /* partner */
+  .partner {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .partner .partner-container {
+    margin: 0 46rem;
+  }
+  .partner .partner-container .partner-item .image {
+    height: 26rem;
+  }
+  
+  .partner .partner-container .partner-item .image img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  .partner .partner-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 5rem;
+  }
+  
+  .partner .partner-container .partner-item .heading {
+    color:var(--gray);
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .partner .partner-container .partner-item .name {
+    color: var(--gray);
+    margin-top: 40px;
+    font-size: 34px;
+    font-weight: 550;
+  }
+  
+  .partner .partner-container .partner-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 1.5rem 0;
+    color:var(--gray);
+    text-transform: none;
+  }
+
+  .partner-item .social-icon i {
+    font-size: 2rem;
+    padding: 0.3rem;
+  }
+  /* partner */
+
+  /* banner */
+  .banner {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .banner .banner-container img {
+    max-height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   /* media queries */
   @media (max-width: 1200px) {
     .header {
       padding: 2rem;
+      
     }
   
     .header.active {
@@ -222,6 +394,9 @@ section {
     .home h1 {
       font-size: 5rem;
     }
+    .partner .partner-container {
+      margin: 0 32rem;
+    }
   }
   
   @media (max-width: 991px) {
@@ -231,9 +406,29 @@ section {
     .container {
       margin-top: 9rem;
     }
+    .welcome .box-container {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    .partner .partner-container {
+      margin: 0 16rem;
+    }
+
   }
   
   @media (max-width: 768px) {
+    .pre-header {
+      padding: 1rem 2rem;
+    }
+    .pre-header .info {
+      display: none;
+    }
+    .pre-header .icon i {
+      color: var(--white);
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+    }
+
     .header {
       padding: 1rem 2rem;
     }
@@ -249,7 +444,7 @@ section {
   
     .header .navbar {
       position: fixed;
-      top: 13.8rem;
+      top: 12.2rem;
       left: 0;
       right: 0;
       background: var(--green);
@@ -279,14 +474,14 @@ section {
       color: var(--white);
       margin: 0;
       font-size: 2rem;
-      margin: 2rem 0;
+      padding: 2rem 0;
     }
 
     .header.active .navbar a {
       color: var(--white);
       margin: 0;
       font-size: 2rem;
-      margin: 2rem 0;
+      padding: 2rem 0;
     }
 
     .container {
@@ -297,9 +492,33 @@ section {
       max-height: 24rem;
     }
 
-    .contact .box-container form .inputBox input {
-      width: 100%;
-      margin-bottom: 1rem;
+    .welcome h2.heading {
+      color: #808080;
+      font-size: 20px;
+    }
+    .welcome .welcome-container {
+      margin: 0 2rem;
+    }
+    .welcome .welcome-container .welcom-item {
+      margin: 0;
+    }
+    .welcome .welcome-container .welcom-item .content h3 {
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .story .story-container {
+      margin: 0 2rem;
+    }
+
+    .partner .partner-container {
+      margin: 0 2rem;
+    }
+    .partner .partner-container .partner-item .name {
+      color: var(--gray);
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: 550;
     }
   }
   

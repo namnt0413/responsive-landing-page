@@ -50,7 +50,7 @@
         <a class="menu fas fa-bars"></a>
         <nav class="navbar">
           <a href="#">home</a>
-          <a href="#about">about</a>
+          <a href="#story">story</a>
           <a href="#services">services</a>
           <a href="#works">works</a>
           <a href="#contact">contact</a>
@@ -61,7 +61,8 @@
 
     <div class="container">
 
-      <div class="your-class">
+      <!-- slider -->
+      <div class="slider">
         <div class="slide-image">
           <img src="./images/slide/medium-shot-people-collecting-donations.jpg">
         </div>
@@ -75,6 +76,106 @@
         </div>
   
       </div>
+
+      <!-- welcome -->
+      <div class="welcome" id="welcome">
+        <h2 class="heading">Welcome to Kind Heart Charity</h2>
+        <div class="welcome-container">
+          <div class="welcom-item">
+            <div class="image">
+              <img src="./images/icons/hands.png" alt="" />
+             </div>
+             <div class="content">
+               <h3>Become a volunteer</h3>
+             </div>
+          </div>
+          <div class="welcom-item">
+            <div class="image">
+              <img src="./images/icons/heart.png" alt="" />
+             </div>
+             <div class="content">
+               <h3>Caring Earth</h3>
+             </div>
+          </div>
+          <div class="welcom-item">
+            <div class="image">
+              <img src="./images/icons/receive.png" alt="" />
+             </div>
+             <div class="content">
+               <h3>Make a donation</h3>
+             </div>
+          </div>
+          <div class="welcom-item">
+            <div class="image">
+              <img src="./images/icons/scholarship.png" alt="" />
+             </div>
+             <div class="content">
+               <h3>Schoolarship  program</h3>
+             </div>
+          </div>
+       </div> 
+      </div> 
+
+      <!-- story -->
+      <div class="story" id="story">
+        <div class="story-container">
+          <div class="story-item">
+            <div class="image">
+              <img src="./images/group-people-volunteering-foodbank-poor-people.jpg" alt="" />
+            </div>
+          </div>
+          <div class="story-item">
+            <h1 class="heading">Our story</h1>
+            <h3 class="name">Kind Hart Charity, Non profit organization</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus pariatur, facere,
+              iusto maxime, reiciendis aspernatur illo neque ex atque dicta provident accusantium
+              debitis!
+            </p>
+            <h3 class="mission">Our mission</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus pariatur, facere,
+              iusto maxime, reiciendis aspernatur illo neque ex atque dicta provident accusantium
+              debitis!
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- partner -->
+      <div class="partner" id="partner">
+        <div class="partner-container">
+          <div class="partner-item">
+            <div class="image">
+              <img src="./images/portrait-volunteer-who-organized-donations-charity.jpg" alt="" />
+            </div>
+          </div>
+          <div class="partner-item">
+            <h1 class="name">Sandy Chan</h1>
+            <h3 class="position">Founding Partner</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus pariatur, facere,
+              iusto maxime, reiciendis aspernatur illo neque ex atque dicta provident accusantium
+              debitis!
+            </p>
+            <div class="social-icon">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- banner -->
+      <div class="banner" id="banner">
+        <div class="banner-container">
+          <img src="./images/banner.png" alt="" />
+        </div>
+      </div>
+
 
     </div>
 
@@ -92,17 +193,20 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.your-class').slick({
+        $('.slider').slick({
           autoplay: true,
           autoplaySpeed: 3000,
+          arrow: true,
           infinite: true,
           speed: 1000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           fade: true,
-          cssEase: 'linear'
+          cssEase: 'linear',
         });
       });
     </script>
