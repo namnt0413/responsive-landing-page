@@ -38,7 +38,7 @@
 :root {
   --black: #16161d;
   --white: #fff;
-  --gray: #808080;
+  --gray: #5a6f80;
   --light-bg: #f5f5f8;
   --google-color: #4285f4;
   --twitter-color: #1da1f2;
@@ -169,6 +169,7 @@ section {
   
   .logo-text {
     float: right;
+    padding: 5px;
   }
 
   .logo-text .name {
@@ -236,7 +237,7 @@ section {
     color: #808080;
   }
   .welcome .welcome-container {
-    margin: 0 16rem;
+    margin: 0 20rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 5rem;
@@ -248,15 +249,15 @@ section {
     font-size: 1.2rem;
     padding: 1rem;
   }
-  .welcome .welcome-container .welcom-item {
+  .welcome .welcome-container .welcome-item {
     margin: 0 15px;
     width: 126px;
   }
-  .welcome .welcome-container .welcom-item .content h3 {
+  .welcome .welcome-container .welcome-item .content h3 {
     font-size: 16px;
     font-weight: 500;
   }
-  .welcome .welcome-container .welcom-item .image img {
+  .welcome .welcome-container .welcome-item .image img {
     padding: 0 20px;
     height: 86px;
   }
@@ -376,20 +377,149 @@ section {
     background-position: center;
   }
 
+  /* causes */
+  .causes {
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+  }
+  .causes h2.heading {
+    color: #808080;
+  }
+  .causes .causes-container {
+    margin: 0 20rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+  .causes .causes-container .causes-item .image img {
+    padding: 0 20px;
+    height: 200px;
+    width: 100%;
+    border-top-right-radius: 32px 20px;
+    border-top-left-radius: 32px 20px;
+  }
+  .causes .causes-container .content {
+    position: relative;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .causes-container .content .progress .raised {
+    float: left;
+    padding: 5px;
+  }
+  .causes-container .content .progress .goal {
+    float: right;
+    padding: 5px;
+  }
+  .causes-container .content .donate {
+    clear: both;
+    margin-top: 10px;
+  }
+  .causes-container .content .donate button {
+    cursor: pointer;
+    background: var(--gray);
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-bottom-right-radius: 32px 20px;
+    border-bottom-left-radius: 32px 20px;
+    width: -webkit-fill-available;
+  }  
+  .causes-container .causes-item .content h3 {
+    font-size: 18px;
+    font-weight: 520;
+    text-align: left;
+    color: var(--green);
+    padding: 5px 10px;
+  }
+  .causes-container .causes-item .content p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--gray);
+    padding: 5px 10px;
+  }
+  /* 
+  .welcome .welcome-container .welcom-item {
+    margin: 0 15px;
+    width: 126px;
+  }
+
+ */
+  /* welcome */
+
+  @-webkit-keyframes animate-stripes {
+    from {
+      background-position: 0 0;
+    }
+    
+    to {
+     background-position: 44px 0;
+    }
+  }
+  .ui-progress-bar {
+    position: relative;
+    height: 7px;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    border-radius: 35px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+  }
+  .ui-progress {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 7px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-background-size: 44px 44px; /* Webkit */
+    /* background-color: var(--green); */
+    background: -webkit-gradient(linear, 0 0, 44 44,
+      color-stop(0.00, rgba(255,255,255,0.17)),
+      color-stop(0.25, rgba(255,255,255,0.17)),
+      color-stop(0.26, rgba(255,255,255,0)),
+      color-stop(0.50, rgba(255,255,255,0)),
+      color-stop(0.51, rgba(255,255,255,0.17)),
+      color-stop(0.75, rgba(255,255,255,0.17)),
+      color-stop(0.76, rgba(255,255,255,0)),
+      color-stop(1.00, rgba(255,255,255,0))
+    ), -webkit-gradient(linear, left bottom, left top, color-stop(0, #5a6f80), color-stop(1, #16161d));
+    -webkit-box-shadow: inset 0px 1px 0px 0px #dbf383, inset 0px -1px 1px #58c43a;
+    -moz-box-shadow: inset 0px 1px 0px 0px #dbf383, inset 0px -1px 1px #58c43a;
+    box-shadow: inset 0px 1px 0px 0px #dbf383, inset 0px -1px 1px #5a6f80;
+    border: 1px solid #5a6f80;
+    -webkit-animation: animate-stripes 2s linear infinite;
+  }
+  .ui-progress span.ui-label {
+    font-size: 1.2em;
+    position: absolute;
+    right: 0;
+    line-height: 33px;
+    padding-right: 12px;
+    color: rgba(0,0,0,0.6);
+    text-shadow: rgba(255,255,255, 0.45) 0 1px 0px;
+    white-space: nowrap;
+  }
+
+
+
+
+
+
+
+
+
+
+
   /* media queries */
   @media (max-width: 1200px) {
-    .header {
-      padding: 2rem;
-      
-    }
-  
-    .header.active {
-      padding: 2rem;
-    }
-  
-    section {
-      padding: 3rem 2rem;
-    }
   
     .home h1 {
       font-size: 5rem;
@@ -403,6 +533,12 @@ section {
     html {
       font-size: 60%;
     }
+    .header {
+      padding: 2rem;
+    }
+    .header.active {
+      padding: 2rem;
+    }
     .container {
       margin-top: 9rem;
     }
@@ -411,6 +547,10 @@ section {
     }
     .partner .partner-container {
       margin: 0 16rem;
+    }
+
+    .causes .causes-container {
+      margin: 0 3rem;
     }
 
   }
@@ -499,10 +639,10 @@ section {
     .welcome .welcome-container {
       margin: 0 2rem;
     }
-    .welcome .welcome-container .welcom-item {
+    .welcome .welcome-container .welcome-item {
       margin: 0;
     }
-    .welcome .welcome-container .welcom-item .content h3 {
+    .welcome .welcome-container .welcome-item .content h3 {
       font-size: 12px;
       font-weight: 500;
     }
@@ -519,6 +659,10 @@ section {
       margin-top: 0;
       font-size: 24px;
       font-weight: 550;
+    }
+
+    .causes .causes-container {
+      margin: 0 3rem;
     }
   }
   
