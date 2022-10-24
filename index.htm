@@ -28,8 +28,8 @@
     <header>
       <div class="pre-header">
         <div class="info">
-          <span class="address">Street,Distinct,City,Nation</span>
-          <span class="website">example@gmail.com</span>
+          <span class="address"><i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> Street,Distinct,City,Nation</span>
+          <span class="website"><i class="fa-solid fa-envelope" style="margin-right: 5px;"></i> example@gmail.com</span>
         </div>
         <div class="icon">
           <i class="fa-brands fa-twitter"></i>
@@ -49,11 +49,12 @@
         </a>
         <a class="menu fas fa-bars"></a>
         <nav class="navbar">
-          <a href="#">home</a>
-          <a href="#story">story</a>
-          <a href="#services">services</a>
-          <a href="#works">works</a>
-          <a href="#contact">contact</a>
+          <a href="#slider">home</a>
+          <a href="#welcome">about</a>
+          <a href="#causes">causes</a>
+          <a href="#form">volunteer</a>
+          <a href="#news">news</a>
+          <a href="#footer">contact</a>
         </nav>
       </div>
     </header>
@@ -62,7 +63,7 @@
     <div class="container">
 
       <!-- slider -->
-      <div class="slider">
+      <div class="slider" id="slider">
         <div class="slide-image">
           <img src="./images/slide/medium-shot-people-collecting-donations.jpg">
         </div>
@@ -305,9 +306,116 @@
         </div>
       </div>
 
+      <!-- news -->
+      <div class="news" id="news">
+        <h2 class="new-heading">Lastest News</h2>
+        <div class="news-container">
+          <div class="news-main col-7">
+            <div class="news-item">
+              <div class="news-image">
+                <img src="./images/news/medium-shot-volunteers-with-clothing-donations.jpg" >
+              </div>
+              <div class="news-image-title">Lifestyle, Clothing Donation</div>              
+              <div class="news-info">
+                <span class="date"><i class="fa-regular fa-calendar"></i> October 12, 2036</span>
+                <span class="author"><i class="fa-regular fa-user"></i> By Admin</span>
+                <span class="comment"><i class="fa-regular fa-comment"></i> 32 Comments</span>
+              </div>
+              <div class="news-title">
+                <h2>Clothing donation to unban area</h2>
+              </div>
+              <div class="news-content">
+                <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus pariatur, facere,
+                  iusto maxime, reiciendis aspernatur illo neque</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-image">
+                <img src="./images/news/medium-shot-people-collecting-foodstuff.jpg" >
+              </div>
+              <div class="news-image-title">Food, donation, caring</div>              
+              <div class="news-info">
+                <span class="date"><i class="fa-regular fa-calendar"></i> October 20, 2036</span>
+                <span class="author"><i class="fa-regular fa-user"></i> By Admin</span>
+                <span class="comment"><i class="fa-regular fa-comment"></i> 35 Comments</span>
+              </div>
+              <div class="news-title">
+                <h2>Food donation area</h2>
+              </div>
+              <div class="news-content">
+                <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus pariatur, facere,
+                  iusto maxime, reiciendis aspernatur illo neque</p>
+              </div>
+            </div>
+          </div>
+          <div class="news-sidebar col-5">
+            <div class="search">
+              <input placeholder="&#xf002;">
+            </div>
+            <h2>Recent News</h2>
+            <div class="recent-news">
+              <div class="recent-news-item">
+                <div class="image col-4">
+                  <img src="./images/news/close-up-volunteer-oganizing-stuff-donation.jpg">
+                </div>
+                <div class="info col-8">
+                  <h3>Food donation area</h3>
+                  <span><i class="fa-regular fa-calendar"></i> October 20, 2036</span>
+                </div>
+              </div>
+              <div class="recent-news-item">
+                <div class="image col-4">
+                  <img src="./images/news/close-up-happy-people-working-together.jpg">
+                </div>
+                <div class="info col-8">
+                  <h3>Food donation area</h3>
+                  <span><i class="fa-regular fa-calendar"></i> October 20, 2036</span>
+                </div>
+              </div>
+            </div>
+            <h2>Categories</h2>
+            <ul class="list-categories" >
+              <li>Drink water <span>20</span></li>
+              <li>Food donation <span>30</span></li>
+              <li>Children education <span>10</span></li>
+              <li>Poverty development <span>15</span></li>
+              <li>Clothing donation <span>20</span></li>
+            </ul>
+            <h2>Tags</h2>
+            <div class="spans">
+              <span>Donation</span>
+              <span>Clothing</span>
+              <span>Food</span>
+              <span>Children</span>
+              <span>Education</span>
+              <span>Poverty</span>
+              <span>Clean water</span>
+            </div>
+            <h2>Newsletter Form</h2>
+            <form class="form-control ">
+              <input class="form-group newletter-form" placeholder="Email adrress" >
+              <button class="newletter-form-btn" >Subcribe</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
     </div>
 
-
+    <footer class="footer" id="footer">
+      <div class="info">
+        <span class="address"><i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> Street,Distinct,City,Nation</span>
+        <span class="website"><i class="fa-solid fa-envelope" style="margin-right: 5px;"></i> example@gmail.com</span>
+      </div>
+      <div class="icon">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-telegram"></i>
+      </div>
+    </footer>
 
 
     <!-- ionicons cdn -->
