@@ -41,7 +41,7 @@
       </div>
       <div class="header">
         <a href="#" class="logo">
-          <img src="./images/logo.png" style="width:56px;height:56px;">
+          <img src="./images/logo.png">
           <div class="logo-text">
             <span class="name">Kind Hart Charity</span><br>
             <span class="organization" >Non profit organization</span>
@@ -64,16 +64,31 @@
 
       <!-- slider -->
       <div class="slider" id="slider">
-        <div class="slide-image">
-          <img src="./images/slide/medium-shot-people-collecting-donations.jpg">
+        <div class="slide-image" style=" 
+          background-image: url('./images/slide/medium-shot-people-collecting-donations.jpg');"
+        >
+          <div class="slide-text">
+            <div class="non-profit">Non-profit</div>
+            <div class="support">You can support us to grow more</div>
+          </div>
         </div>
   
-        <div class="slide-image">
-          <img src="./images/slide/volunteer-helping-with-donation-box.jpg">
+        <div class="slide-image" style="
+          background-image: url('./images/slide/volunteer-helping-with-donation-box.jpg');"
+        >
+          <div class="slide-text">
+            <div class="non-profit">Non-profit</div>
+            <div class="support">You can support us to grow more</div>
+          </div>
         </div>
   
-        <div class="slide-image">
-          <img src="./images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg">
+        <div class="slide-image" style=" 
+          background-image: url('./images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg');""
+        >
+          <div class="slide-text">
+            <div class="non-profit"><strong>Non-profit</strong></div>
+            <div class="support">You can support us to grow more</div>
+          </div>
         </div>
   
       </div>
@@ -121,8 +136,11 @@
       <div class="story" id="story">
         <div class="story-container">
           <div class="story-item">
-            <div class="image">
-              <img src="./images/group-people-volunteering-foodbank-poor-people.jpg" alt="" />
+            <div class="image" 
+              style="background: url('./images/group-people-volunteering-foodbank-poor-people.jpg');
+              background-size: cover; background-repeat: no-repeat; background-position: center center;"
+            >
+              <!-- <img src="./images/group-people-volunteering-foodbank-poor-people.jpg" alt="" /> -->
             </div>
           </div>
           <div class="story-item">
@@ -139,6 +157,11 @@
               iusto maxime, reiciendis aspernatur illo neque ex atque dicta provident accusantium
               debitis!
             </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus pariatur, facere,
+              iusto maxime, reiciendis aspernatur illo neque ex atque dicta provident accusantium
+              debitis!
+            </p>
           </div>
 
         </div>
@@ -148,8 +171,11 @@
       <div class="partner" id="partner">
         <div class="partner-container">
           <div class="partner-item">
-            <div class="image">
-              <img src="./images/portrait-volunteer-who-organized-donations-charity.jpg" alt="" />
+            <div class="image" 
+              style="background: url('./images/portrait-volunteer-who-organized-donations-charity.jpg');
+              background-size: cover; background-repeat: no-repeat; background-position: center center;"
+            >
+              <!-- <img src="./images/portrait-volunteer-who-organized-donations-charity.jpg" alt="" /> -->
             </div>
           </div>
           <div class="partner-item">
@@ -181,35 +207,13 @@
       <div class="causes" id="causes">
         <h2 class="heading">Our Causes</h2>
         <div class="causes-container">
-          <div class="causes-item">
-            <div class="image">
-              <img src="./images/causes/african-woman-pouring-water-recipient-outdoors.jpg" alt="" />
-             </div>
-             <div class="content">
-               <h3>Become a volunteer</h3>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <!-- Progress bar -->
-                <div id="progress_bar" class="ui-progress-bar ui-container">
-                  <div class="ui-progress" style="width: 70%;">
-                    <span class="ui-label" style="display:none;">Processing <b class="value">79%</b></span>
-                  </div>
-                </div>
-               <!-- /Progress bar -->
-               <div class="progress">
-                 <span class="raised">Raised: $18.00</span>
-                 <span class="goal">Goal: $32.00</span>
-               </div>
-               <div class="donate">
-                <button>Donate now</button>
-               </div>
-             </div>
-          </div>
+
           <div class="causes-item">
             <div class="image">
               <img src="./images/causes/group-african-kids-paying-attention-class.jpg" alt="" />
-             </div>
-             <div class="content">
-              <h3>Become a volunteer</h3>
+            </div>
+            <div class="content">
+              <h3>Children education</h3>
               <p>Temporibus pariatur, facere, iusto maxime, reiciendis aspernatur</p>
                <!-- Progress bar -->
                <div id="progress_bar" class="ui-progress-bar ui-container">
@@ -219,20 +223,20 @@
                </div>
               <!-- /Progress bar -->
               <div class="progress">
-                <span class="raised">Raised: $27.00</span>
-                <span class="goal">Goal: $60.00</span>
+                <span class="raised"><strong>Raised:</strong> $27.00</span>
+                <span class="goal"><strong>Goal:</strong> $60.00</span>
               </div>
-              <div class="donate">
-               <button>Donate now</button>
-              </div>
+            </div>
+            <div class="donate">
+              <button>Donate now</button>
              </div>
           </div>
           <div class="causes-item">
             <div class="image">
               <img src="./images/causes/poor-child-landfill-looks-forward-with-hope.jpg" alt="" />
-             </div>
-             <div class="content">
-              <h3>Become a volunteer</h3>
+            </div>
+            <div class="content">
+              <h3>Poverty development</h3>
               <p>Illo neque ex atque dicta provident accusantium debitis!</p>
                <!-- Progress bar -->
                <div id="progress_bar" class="ui-progress-bar ui-container">
@@ -242,15 +246,37 @@
                </div>
               <!-- /Progress bar -->
               <div class="progress">
-                <span class="raised">Raised: $84.00</span>
-                <span class="goal">Goal: $100.00</span>
+                <span class="raised"><strong>Raised:</strong> $84.00</span>
+                <span class="goal"><strong>Goal:</strong> $100.00</span>
+              </div>
+            </div>
+            <div class="donate">
+             <button>Donate now</button>
+            </div>
+          </div>
+          <div class="causes-item">
+            <div class="image">
+              <img src="./images/causes/african-woman-pouring-water-recipient-outdoors.jpg" alt="" />
+             </div>
+              <div class="content">
+               <h3>Supply drinking water</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <!-- Progress bar -->
+                <div id="progress_bar" class="ui-progress-bar ui-container">
+                  <div class="ui-progress" style="width: 70%;">
+                    <span class="ui-label" style="display:none;">Processing <b class="value">79%</b></span>
+                  </div>
+                </div>
+               <!-- /Progress bar -->
+               <div class="progress">
+                 <span class="raised"><strong>Raised:</strong> $18.00</span>
+                 <span class="goal"><strong>Goal:</strong> $32.00</span>
+               </div>
               </div>
               <div class="donate">
                <button>Donate now</button>
               </div>
-             </div>
           </div>
-
        </div> 
       </div> 
 
@@ -400,6 +426,74 @@
           </div>
         </div>
       </div>
+
+      <!-- happy customer banner  -->
+      <!-- <div class="happy-customer-banner" 
+        style="border: 1px solid red;background:url('./images/banner2.png');width:100%;height:auto;
+        background-size: cover; background-repeat: no-repeat; background-position: center center;
+        "
+      >
+      </div> -->
+
+      <!-- banner -->
+      <div class="banner" id="banner">
+        <div class="banner-container">
+          <img src="./images/banner2.png" alt="" />
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div class="contact" id="contact">
+        <div class="contact-container">
+          <div class="contact-info col-6">
+            <h2 class="contact-info-header">Get in touch</h2>
+            <div class="person">
+              <div class="person-image col-2">
+                <img src="./images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg" >
+              </div>
+              <div class="person-info col-10">
+                <div class="person-name">Clara Barton</div>
+                <div class="person-position">HR & Office Manager</div>
+              </div>
+            </div>
+            <div class="infomation">
+              <h2 class="infomation-header">Contact infomation</h2>
+              <div class="infomation-icon"><i class="fa-solid fa-location-dot"></i> Askerhusstrandar 20, 0150 Oslo, Norway</div>
+              <div class="infomation-icon"><i class="fa-solid fa-phone"></i> 305-240-9671</div>
+              <div class="infomation-icon"><i class="fa-solid fa-envelope"></i> donate@chaqrity.org</div>
+            </div>
+            <button>Get direction</button>
+          </div>
+          <div class="contact-form col-6">
+            <h2 class="contact-form-header">Contact form</h2>
+            <div class="send-email" style="margin: 20px 0;color: var(--gray);font-size:14px">Or, you can just send an email: info@charity.org</div>
+            <form class="register-form" method="" action="">
+              <div class="form-group row">
+                <div class="form-control col-6">
+                  <input type="text" name="name" value="" class="input-area"  placeholder="Jack"><br>
+                </div>
+                <div class="form-control col-6">
+                    <input type="text" name="email" value="" class="input-area" placeholder="Doe"/><br>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="form-control col-12">
+                    <input type="email" name="subject" value="" class="input-area"  placeholder="jackdoe@gmail.com"><br>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="form-control col-12">
+                  <!-- <input type="textarea" name="comment" value="" class="input-area"  placeholder="What can i help you"><br> -->
+                  <textarea name="comment" value="" class="input-area"  placeholder="What can i help you"></textarea>
+                </div>
+              </div>
+              <br>
+              <button type="submit" class="button">Send message</button>
+            </form>
+
+        </div>
+      </div>
+
 
     </div>
 
