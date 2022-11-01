@@ -1,0 +1,10 @@
+- căn giữa preheader	            DONE		
+- fix size slider			        DONE
+- css welcome icon			        DONE
+- fix responsive partner image		DONE
+- fix donate			            DONE
+- nut search chua giong design      DONE
+- mission story                     DONE
+- header ( donate button )          DONE
+- fix phong nen xanh 1 so div       DONE
+- responsive image lai              DONE
