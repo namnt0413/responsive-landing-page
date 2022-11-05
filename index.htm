@@ -16,10 +16,10 @@
     />
 
     <!-- local css file -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
 
   <body>
@@ -55,6 +55,7 @@
           <a href="#form">volunteer</a>
           <a href="#news">news</a>
           <a href="#footer">contact</a>
+          <a id="donate" href="#donate">donate</a>
         </nav>
       </div>
     </header>
@@ -97,36 +98,36 @@
       <div class="welcome" id="welcome">
         <h2 class="heading">Welcome to Kind Heart Charity</h2>
         <div class="welcome-container">
-          <div class="welcome-item">
+          <div class="welcome-item col-3">
             <div class="image">
               <img src="./images/icons/hands.png" alt="" />
              </div>
              <div class="content">
-               <h3>Become a volunteer</h3>
+               <h3>Become a <strong>volunteer</strong></h3>
              </div>
           </div>
-          <div class="welcome-item">
+          <div class="welcome-item col-3">
             <div class="image">
               <img src="./images/icons/heart.png" alt="" />
              </div>
              <div class="content">
-               <h3>Caring Earth</h3>
+               <h3><strong>Caring</strong> Earth</h3>
              </div>
           </div>
-          <div class="welcome-item">
+          <div class="welcome-item col-3">
             <div class="image">
               <img src="./images/icons/receive.png" alt="" />
              </div>
              <div class="content">
-               <h3>Make a donation</h3>
+               <h3>Make a <strong>donation</strong></h3>
              </div>
           </div>
-          <div class="welcome-item">
+          <div class="welcome-item col-3">
             <div class="image">
               <img src="./images/icons/scholarship.png" alt="" />
              </div>
              <div class="content">
-               <h3>Schoolarship  program</h3>
+               <h3><strong>Schoolarship</strong> program</h3>
              </div>
           </div>
        </div> 
@@ -135,15 +136,12 @@
       <!-- story -->
       <div class="story" id="story">
         <div class="story-container">
-          <div class="story-item">
-            <div class="image" 
-              style="background: url('./images/group-people-volunteering-foodbank-poor-people.jpg');
-              background-size: cover; background-repeat: no-repeat; background-position: center center;"
-            >
-              <!-- <img src="./images/group-people-volunteering-foodbank-poor-people.jpg" alt="" /> -->
-            </div>
+          <div class="story-image col-6">
+              <!-- style="background: url('./images/group-people-volunteering-foodbank-poor-people.jpg');
+              background-size: cover; background-repeat: no-repeat; background-position: center center;" -->
+              <img src="./images/group-people-volunteering-foodbank-poor-people.jpg" alt="" />
           </div>
-          <div class="story-item">
+          <div class="story-content col-6">
             <h1 class="heading">Our story</h1>
             <h3 class="name">Kind Hart Charity, Non profit organization</h3>
             <p>
@@ -170,15 +168,14 @@
       <!-- partner -->
       <div class="partner" id="partner">
         <div class="partner-container">
-          <div class="partner-item">
-            <div class="image" 
-              style="background: url('./images/portrait-volunteer-who-organized-donations-charity.jpg');
-              background-size: cover; background-repeat: no-repeat; background-position: center center;"
-            >
-              <!-- <img src="./images/portrait-volunteer-who-organized-donations-charity.jpg" alt="" /> -->
-            </div>
+          <div class="partner-image col-6">
+            <!-- <div class="image" >
+            </div> -->
+              <!-- style="background: url('./images/portrait-volunteer-who-organized-donations-charity.jpg');
+              background-size: cover; background-repeat: no-repeat; background-position: center center;" -->
+              <img src="./images/portrait-volunteer-who-organized-donations-charity.jpg" alt="" />
           </div>
-          <div class="partner-item">
+          <div class="partner-content col-6">
             <h1 class="name">Sandy Chan</h1>
             <h3 class="position">Founding Partner</h3>
             <p>
@@ -208,7 +205,7 @@
         <h2 class="heading">Our Causes</h2>
         <div class="causes-container">
 
-          <div class="causes-item">
+          <div class="causes-item col-4">
             <div class="image">
               <img src="./images/causes/group-african-kids-paying-attention-class.jpg" alt="" />
             </div>
@@ -231,7 +228,7 @@
               <button>Donate now</button>
              </div>
           </div>
-          <div class="causes-item">
+          <div class="causes-item col-4">
             <div class="image">
               <img src="./images/causes/poor-child-landfill-looks-forward-with-hope.jpg" alt="" />
             </div>
@@ -254,8 +251,8 @@
              <button>Donate now</button>
             </div>
           </div>
-          <div class="causes-item">
-            <div class="image">
+          <div class="causes-item col-4">
+              <div class="image">
               <img src="./images/causes/african-woman-pouring-water-recipient-outdoors.jpg" alt="" />
              </div>
               <div class="content">
@@ -283,35 +280,36 @@
       <!-- form -->
       <div class="form" id="form">
         <div class="form-container">
-          <div class="form-item">
+          <div class="form-item col-6">
             <h1 class="heading">Volunteer</h1>
-            <form class="register-form" method="" action="">
+            <form id="volunteer-form" method="" action="">
               <h2 class="form-header">Become a volunteer today</h2>
               <div class="form-group row">
                 <div class="form-control col-6">
-                  <label>Name</label><br>
-                  <input type="text" name="name" value="" class="input-area"  placeholder=""><br>
+                  <input type="text" name="name" value="" class="input-area"  placeholder="Jack Doe"><br>
                 </div>
                 <div class="form-control col-6">
-                    <label>Email</label><br>
-                    <input type="text" name="email" value="" class="input-area" placeholder=""/><br>
+                    <input type="text" name="email" value="" class="input-area" placeholder="jackdoe@gmail.com"/><br>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="form-control col-6">
-                    <label>Subject</label><br>
-                    <input type="text" name="subject" value="" class="input-area"  placeholder=""><br>
+                    <input type="text" name="subject" value="" class="input-area"  placeholder="Subject"><br>
                 </div>
                 <div class="form-control col-6">
-                    <label>Upload your CV</label>
-                    <input type="file" id="cv" name="cv" value="" class="input-area" hidden>
-                    <label className="label-upload" for="cv"><i class="fa-solid fa-upload"></i></label>
+                    <!-- <input type="none" name="cv" value="" class="input-area upload" placeholder="Upload your CV" style="font-family:Arial, FontAwesome"/> -->
+                    <!-- <label className="label-upload" for="cv"><i class="fa-solid fa-upload"></i></label> -->
+                    <!-- <input type="file" id="cv" name="cv" value="" class="input-area" hidden> -&#xf382; -->
+                    <input name="subject" value="" class="input-area"  placeholder="Upload your CV">
+                    <label for="fileInput" class="upload-button"> 
+                      <i id="icon" class="fa-solid fa-cloud-arrow-up"></i>
+                    </label>
+                    <input id="fileInput" type="file">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="form-control col-12">
-                  <label>Comment (Optional)</label><br>
-                  <input type="textarea" name="comment" value="" class="input-area"  placeholder=""><br>
+                  <textarea type="textarea" name="comment" value="" class="input-area comment"  placeholder="Comment (Optional)"></textarea>
                 </div>
               </div>
               <br>
@@ -319,9 +317,9 @@
             </form>
 
           </div>
-          <div class="form-item about">
+          <div class="form-item about col-6">
             <div class="image">
-              <img src="./images/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg" alt="" />
+            <img src="./images/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg" alt="" />
             </div>
             <h3 class="intro">About volunteering</h3>
             <p class="content">
@@ -376,8 +374,15 @@
           </div>
           <div class="news-sidebar col-5">
             <div class="search">
-              <input placeholder="&#xf002;">
+              <input placeholder="Search">
+              <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
             </div>
+
+            <!-- <input name="subject" value="" class="input-area"  placeholder="Upload your CV">
+            <label for="fileInput" class="upload-button"> 
+            </label>
+            <input id="fileInput" type="file"> -->
+
             <h2>Recent News</h2>
             <div class="recent-news">
               <div class="recent-news-item">
@@ -417,11 +422,13 @@
               <span>Poverty</span>
               <span>Clean water</span>
             </div>
-            <h2>Newsletter Form</h2>
-            <form class="form-control ">
-              <input class="form-group newletter-form" placeholder="Email adrress" >
-              <button class="newletter-form-btn" >Subcribe</button>
-            </form>
+            <div class="form-newsletter">
+              <h2>Newsletter Form</h2>
+              <form class="form-control ">
+                <input class="form-group newletter-form" placeholder="Email adrress" >
+                <button class="newletter-form-btn" >Subcribe</button>
+              </form>
+            </div>
 
           </div>
         </div>
@@ -467,24 +474,28 @@
           <div class="contact-form col-6">
             <h2 class="contact-form-header">Contact form</h2>
             <div class="send-email" style="margin: 20px 0;color: var(--gray);font-size:14px">Or, you can just send an email: info@charity.org</div>
-            <form class="register-form" method="" action="">
+            <form id="register-form" action="">
               <div class="form-group row">
                 <div class="form-control col-6">
-                  <input type="text" name="name" value="" class="input-area"  placeholder="Jack"><br>
+                  <input type="text" name="firstName" id="firstName" class="input-area"  placeholder="Jack">
+                  <p class="warning"></p>
                 </div>
                 <div class="form-control col-6">
-                    <input type="text" name="email" value="" class="input-area" placeholder="Doe"/><br>
+                  <input type="text" name="lastName" id="lastName" class="input-area" placeholder="Doe"/>
+                  <p class="warning"></p>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="form-control col-12">
-                    <input type="email" name="subject" value="" class="input-area"  placeholder="jackdoe@gmail.com"><br>
+                  <input type="email" name="email" id="email"  class="input-area"  placeholder="jackdoe@gmail.com">
+                  <p class="warning"></p>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="form-control col-12">
                   <!-- <input type="textarea" name="comment" value="" class="input-area"  placeholder="What can i help you"><br> -->
-                  <textarea name="comment" value="" class="input-area"  placeholder="What can i help you"></textarea>
+                  <textarea name="comment" id="comment"  class="input-area"  placeholder="What can i help you"></textarea>
+                  <p class="warning"></p>
                 </div>
               </div>
               <br>
@@ -520,6 +531,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- local js file -->
     <script src="./js/script.js"></script>
+    <script src="./js/app.js"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

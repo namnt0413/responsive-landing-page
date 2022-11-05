@@ -594,7 +594,7 @@ section {
     display: flex;
     gap: 120px;
   } 
-  .form-item .register-form {
+  .form-item #volunteer-form {
     background: var(--white);
     height: auto;
     border-radius: 20px;
@@ -606,17 +606,17 @@ section {
     text-align: left;
     color: var(--white);
   }
-  .form-item .register-form {
+  .form-item #volunteer-form {
     padding: 40px;
   }
-  .form-item .register-form .form-header {
+  .form-item #volunteer-form .form-header {
     font-size: 25px;
     font-weight: 600;
     padding: 5px;
     margin-bottom: 20px;
   }
 
-  .form-item .register-form button {
+  .form-item #volunteer-form button {
     cursor: pointer;
     background: var(--gray);
     border: 0;
@@ -626,21 +626,21 @@ section {
     border-radius: 20px;
     width: 100%;
   }
-  .form-item .register-form .form-group {
+  .form-item #volunteer-form .form-group {
     gap: 8px;
     margin-bottom: 20px;
     display: flex;
     position: relative;
   }
-  .form-item .register-form .form-control {
+  .form-item #volunteer-form .form-control {
     padding: 5px;
   }
-  .form-item .register-form .form-control label {
+  .form-item #volunteer-form .form-control label {
     font-size: 15px;
     margin-bottom: 5px;
     color: var(--gray);
   }
-  .form-item .register-form .input-area {
+  .form-item #volunteer-form .input-area {
     /* height: 30px; */
     /* position: absolute;  */
     /* right: 10px; */
@@ -665,7 +665,7 @@ section {
     padding: 15px;
   }
 
-  .form-item .register-form  .comment {
+  .form-item #volunteer-form  .comment {
     height: 75px;
   }
 
@@ -983,7 +983,7 @@ section {
     font-size: 32px;
     padding: 5px;
   }
-  .contact-form .register-form button {
+  .contact-form #register-form button {
     cursor: pointer;
     background: var(--gray);
     border: 0;
@@ -993,16 +993,16 @@ section {
     border-radius: 20px;
     width: 100%;
   }
-  .contact-form .register-form .form-group {
+  .contact-form #register-form .form-group {
     gap: 8px;
     margin-bottom: 10px;
     display: flex;
     position: relative;
   }
-  .contact-form .register-form .form-control {
+  .contact-form #register-form .form-control {
     padding: 5px;
   }
-  .contact-form .register-form .input-area {
+  .contact-form #register-form .input-area {
     width: 100%;
     border-radius: 9px;
     /* border: 1px solid #ccc; */
@@ -1010,8 +1010,13 @@ section {
     /* margin-top: 5px; */
   }
 
-  .contact-form .register-form .form-control textarea {
+  .contact-form #register-form .form-control textarea {
     height: 150px;
+  }
+  #register-form .form-group .form-control.error .warning {
+    color: red;
+    font-size: 10px;
+    padding: 10px 0;
   }
   
   /* footer */
@@ -1237,7 +1242,7 @@ section {
       margin-top: 9rem;
       font-size: 45px;
     }
-    .form-item .register-form .form-header {
+    .form-item #volunteer-form .form-header {
       font-size: 30px;
     }
     .form .form-container .form-item .image img {
@@ -1259,10 +1264,10 @@ section {
       width: 360px;
       font-size: 16px;
     }
-    .form-item .register-form .comment {
+    .form-item #volunteer-form .comment {
       height: 120px;
     }
-    .form-item .register-form .input-area {
+    .form-item #volunteer-form .input-area {
       padding: 15px;
     }
 
@@ -1637,7 +1642,7 @@ section {
     .form .form-container .form-item .content {
       width: 260px;
     }
-    .form-item .register-form {
+    .form-item #register-form {
       padding: 20px;
     }
 
@@ -2020,7 +2025,7 @@ section {
     .form .form-container {
       margin: 0 4rem;
     }
-    .form-item .register-form {
+    .form-item #register-form {
       padding: 30px;
     }
 
@@ -2074,10 +2079,10 @@ section {
     .form .form-container {
       margin: 0 2rem;
     }
-    .form-item .register-form .form-header {
+    .form-item #volunteer-form .form-header {
       font-size: 20px;
     }
-    .form-item .register-form {
+    .form-item #volunteer-form {
       padding: 20px;
     }
 
@@ -2380,7 +2385,7 @@ section {
     .welcome .welcome-container {
       gap: 3rem;
     }
-    .form-item .register-form {
+    .form-item #volunteer-form {
       padding: 5px;
     }
     .form .form-container {
